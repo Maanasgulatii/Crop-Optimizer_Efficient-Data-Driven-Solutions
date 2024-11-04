@@ -45,7 +45,7 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 
 ### Visualization Tools:
 
-- Heat maps
+- Heat maps (Folium, Google Earth Engine)
 - Correlation matrices
 - Performance metrics graphs
 - Geographic visualizations
