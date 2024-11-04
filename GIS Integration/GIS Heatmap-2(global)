@@ -1,0 +1,47 @@
+import folium
+import random
+from folium.plugins import HeatMap
+
+# List of example global locations (latitude, longitude) with crop names
+regions = [
+    {"location": [37.7749, -122.4194], "crop": "rice", "region": "California, USA"},  # USA
+    {"location": [51.5074, -0.1278], "crop": "wheat", "region": "London, UK"},       # UK
+    {"location": [-33.8688, 151.2093], "crop": "barley", "region": "Sydney, Australia"},  # Australia
+    {"location": [-15.7801, -47.9292], "crop": "soybean", "region": "Brasilia, Brazil"},  # Brazil
+    {"location": [28.6139, 77.209], "crop": "maize", "region": "Delhi, India"},  # India
+    {"location": [39.9042, 116.4074], "crop": "corn", "region": "Beijing, China"},    # China
+    {"location": [55.7558, 37.6173], "crop": "rye", "region": "Moscow, Russia"},  # Russia
+    {"location": [-1.2921, 36.8219], "crop": "coffee", "region": "Nairobi, Kenya"},  # Kenya
+    {"location": [19.4326, -99.1332], "crop": "tomato", "region": "Mexico City, Mexico"},  # Mexico
+    {"location": [48.8566, 2.3522], "crop": "grape", "region": "Paris, France"}  # France
+]
+
+# Create a base map
+base_map = folium.Map(location=[20, 0], zoom_start=2)
+
+# Function to add crop distribution to the map
+def plot_crop_distribution(region):
+    lat, lon = region['location']
+    crop = region['crop']
+    region_name = region['region']
+    
+    # Add marker for each region
+    folium.Marker(
+        location=[lat, lon],
+        popup=f"Crop: {crop} \nRegion: {region_name}",
+        icon=folium.Icon(color='green')
+    ).add_to(base_map)
+    
+    # Randomly simulate heatmap intensities
+    heat_data = [[lat + random.uniform(-0.05, 0.05), lon + random.uniform(-0.05, 0.05)] for _ in range(100)]
+    HeatMap(heat_data, radius=10, blur=15).add_to(base_map)
+
+# Plot crop distribution for all regions
+for region in regions:
+    plot_crop_distribution(region)
+
+# Save the final map
+base_map.save("global_crop_distribution_map.html")
+
+# Display the map in Jupyter (only works if running in Jupyter)
+base_map
