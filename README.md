@@ -104,9 +104,10 @@ Validation accuracy: >70%
 
 ### Installation
 
-git clone https://github.com/yourusername/crop-optimizer.git
+git clone https://github.com/MaanasGulatii/Crop-Optimizer_Efficient-Data-Driven-Solutions
+.git
 
-cd crop-optimizer
+cd Crop-Optimizer_Efficient-Data-Driven-Solutions
 
 pip install -r requirements.txt
 
