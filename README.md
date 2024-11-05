@@ -39,7 +39,7 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 2. **Model Optimization:**
 
 - Correlation analysis
-- K-means clustering for pattern identification
+- K-means clustering
 - Feature importance ranking
 
 
@@ -55,16 +55,16 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 ### Results and Performance
 
 
-Initial baseline accuracy: ~35%
-Final optimized accuracy: >75%
-Validation accuracy: >70%
+- Initial baseline accuracy: ~35%
+- Final optimized accuracy: >75%
+- Validation accuracy: >70%
 
 ### Performance Metrics
 
 - Precision scores
 - Recall values
 - F1 scores
-- Confusion matrix analysi
+- Confusion matrix analysis
 
 ### Future Enhancements
 **IoT Integration**
@@ -90,9 +90,7 @@ Validation accuracy: >70%
 
  - Automated watering systems
  - Moisture level optimization
- - Water usage efficiency
  - Drought prevention
-
 
 
 **AI Enhancements:**
@@ -100,7 +98,6 @@ Validation accuracy: >70%
  - CNN for image analysis
  - RNN for time series prediction
  - Transfer learning models
- - Custom neural networks
 
 ### Installation
 
