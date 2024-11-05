@@ -67,9 +67,8 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 - Confusion matrix analysis
 
 ### Future Enhancements
-**IoT Integration**
 
-**Sensor Network:**
+**IoT Integration:**
 
  - Soil moisture sensors
  - Temperature monitors
