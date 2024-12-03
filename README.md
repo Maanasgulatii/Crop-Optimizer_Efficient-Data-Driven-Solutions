@@ -68,7 +68,7 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 
 ### Future Enhancements
 
-**IoT Integration:**
+1. **IoT Integration:**
 
  - Soil moisture sensors
  - Temperature monitors
@@ -76,8 +76,7 @@ The project achieved a significant improvement in prediction accuracy from 35% t
  - pH level detectors
  - Nutrient level sensors
 
-
-**Real-time Monitoring:**
+2. **Real-time Monitoring:**
 
  - Automated data collection
  - Continuous environmental monitoring
@@ -85,14 +84,14 @@ The project achieved a significant improvement in prediction accuracy from 35% t
  - Remote sensing capabilities
 
 
-**Smart Irrigation:**
+3. **Smart Irrigation:**
 
  - Automated watering systems
  - Moisture level optimization
  - Drought prevention
 
 
-**AI Enhancements:**
+4. **AI Enhancements:**
 
  - CNN for image analysis
  - RNN for time series prediction
@@ -100,12 +99,17 @@ The project achieved a significant improvement in prediction accuracy from 35% t
 
 ### Installation
 
-git clone https://github.com/MaanasGulatii/Crop-Optimizer_Efficient-Data-Driven-Solutions
-.git
+```bash
+git clone https://github.com/MaanasGulatii/Crop-Optimizer_Efficient-Data-Driven-Solutions.git
+```
 
+```bash
 cd Crop-Optimizer_Efficient-Data-Driven-Solutions
+```
 
-pip install -r requirements.txt
+```bash
+pip install -r requirements
+```
 
 
 
